@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<style>
+
+body{
+    background-color: rgb(19, 18, 18);
+    
+}
+    h1{
+        font-family: cursive;
+        color: white;
+        text-shadow: 0px 0px 7px rgb(253, 101, 228);
+    }
+    .screen {
+        width: 250px;
+        height: 25px;
+        text-align: right;
+        outline: none;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px 7px rgb(253, 101, 228);
+        
+    }
+
+    .btn {
+        width: 50px;
+        padding: 3px;
+        margin: 2%;
+        outline: none;
+        border: 2px solid white;
+        background-color: black;
+        box-shadow: 0px 0px 8px rgb(71, 162, 246);
+        color: white;
+    }
+
+    .cal {
+        width: 50px;
+        padding: 3px;
+        margin: 2%;
+        box-shadow: 0px 0px 8px rgb(250, 104, 59);
+        outline: none;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+    }
+
+    .equal {
+        width: 118px;
+        padding: 3px;
+        margin: 2%;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        outline: none;
+        box-shadow: 0px 0px 7px rgb(134, 248, 82);
+        
+    }
+
+    .cut{
+        width: 50px;
+        padding: 3px;
+        margin: 2%;
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 7px rgb(243, 245, 112);
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Calculator</h1>
+        <input type="text" class="screen" value="0">
+        <br>
+        <button class="btn" onclick="press1();" name="1">1</button>
+        <button class="btn" onclick="press2();" name="2">2</button>
+        <button class="btn" onclick="press3();" name="3">3</button>
+        <button class="cut" onclick="backspace();"><i class="material-icons">backspace</i></button>
+        
+        <br>
+        <button class="btn" onclick="press4();" name="4">4</button>
+        <button class="btn" onclick="press5();" name="5">5</button>
+        <button class="btn" onclick="press6();" name="6">6</button>
+        <button class="cal" onclick="allclear();">AC</button>
+        
+        <br>
+        <button class="btn" onclick="press7();" name="7">7</button>
+        <button class="btn" onclick="press8();" name="8">8</button>
+        <button class="btn" onclick="press9();" name="9">9</button>
+        <button class="cal" onclick="pressplus();" name="+">+</button>
+        
+        <br>
+        <button class="btn" onclick="press0();" name="0">0</button>
+        <button class="btn" onclick="press00();" name="00">00</button>
+        <button class="btn" onclick="pressdot();" name=".">.</button>
+        <button class="cal" onclick="presssub();" name="-">-</button>
+        <br>
+        <button class="equal" onclick="result();">=</button>
+        <button class="cal" onclick="pressmul();" name="X">X</button>
+        <button class="cal" onclick="pressdiv();" name="/">/</button>
+
+    </center>
+
+    <script>
+        var one = document.querySelector('input');
+
+        function press1() {
+            if (one.value === '0') {
+                one.value = '1';
+            }
+            else {
+                one.value = one.value + '1';
+            }
+        }
+        function press2() {
+            if (one.value === '0') {
+                one.value = '2';
+            }
+            else {
+                one.value = one.value + '2';
+            }
+        }
+        function press3() {
+            if (one.value === '0') {
+                one.value = '3';
+            }
+            else {
+                one.value = one.value + '3';
+            }
+        }
+        function pressplus() {
+            if (one.value === '0') {
+                one.value = ' + ';
+            }
+            else {
+                one.value = one.value + ' + ';
+            }
+        }
+        function press4() {
+            if (one.value === '0') {
+                one.value = '4';
+            }
+            else {
+                one.value = one.value + '4';
+            }
+        }
+        function press5() {
+            if (one.value === '0') {
+                one.value = '5';
+            }
+            else {
+                one.value = one.value + '5';
+            }
+        }
+        function press6() {
+            if (one.value === '0') {
+                one.value = '6';
+            }
+            else {
+                one.value = one.value + '6';
+            }
+        }
+        function presssub() {
+            if (one.value === '0') {
+                one.value = ' - ';
+            }
+            else {
+                one.value = one.value + ' - ';
+            }
+        }
+        function press7() {
+            if (one.value === '0') {
+                one.value = '7';
+            }
+            else {
+                one.value = one.value + '7';
+            }
+        }
+        function press8() {
+            if (one.value === '0') {
+                one.value = '8';
+            }
+            else {
+                one.value = one.value + '8';
+            }
+        }
+        function press9() {
+            if (one.value === '0') {
+                one.value = '9';
+            }
+            else {
+                one.value = one.value + '9';
+            }
+        }
+        function pressmul() {
+            if (one.value === '0') {
+                one.value = ' * ';
+            }
+            else {
+                one.value = one.value + ' * ';
+            }
+        }
+
+        function press0() {
+            if (one.value === '0') {
+                one.value = '0';
+            }
+            else {
+                one.value = one.value + '0';
+            }
+        }
+
+        function press00() {
+            if (one.value === '0') {
+                one.value = '00';
+            }
+            else {
+                one.value = one.value + '00';
+            }
+        }
+
+        function pressdot() {
+            if (one.value === '0') {
+                one.value = '.';
+            }
+            else {
+                one.value = one.value + '.';
+            }
+        }
+
+        function pressdiv() {
+            if (one.value === '0') {
+                one.value = ' / ';
+            }
+            else {
+                one.value = one.value + ' / ';
+            }
+        }
+
+        function result() {
+            one.value = eval(one.value);
+        }
+
+        function allclear() {
+            one.value = "0";
+        }
+
+        function backspace(){
+            one.value = (one.value).substring(0, (one.value).length -1);
+        }
+
+    </script>
+</body>
+
+</html>
