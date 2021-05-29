@@ -129,13 +129,14 @@
         var one = document.querySelector('input');
         var lastchar = '0';
 
-       if(one.value.length > 26) {
-            document.getElementByClassName("screen").style.fontSize = "16px";
-            }
+       
 
         function press1() {
             if (one.value === '0') {
                 one.value = '1';
+            }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
             }
             else {
                 one.value = one.value + '1';
@@ -145,6 +146,10 @@
             if (one.value === '0') {
                 one.value = '2';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '2';
             }
@@ -153,6 +158,10 @@
             if (one.value === '0') {
                 one.value = '3';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '3';
             }
@@ -165,6 +174,10 @@
             else if (lastchar === ' ') {
                 one.value = one.value ;
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + ' + ';
             }
@@ -173,6 +186,10 @@
             if (one.value === '0') {
                 one.value = '4';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '4';
             }
@@ -181,6 +198,10 @@
             if (one.value === '0') {
                 one.value = '5';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '5';
             }
@@ -189,6 +210,10 @@
             if (one.value === '0') {
                 one.value = '6';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '6';
             }
@@ -203,6 +228,10 @@
                 one.value = one.value ;
             }
 
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + ' - ';
             }
@@ -211,6 +240,10 @@
             if (one.value === '0') {
                 one.value = '7';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '7';
             }
@@ -219,6 +252,10 @@
             if (one.value === '0') {
                 one.value = '8';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '8';
             }
@@ -227,6 +264,10 @@
             if (one.value === '0') {
                 one.value = '9';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '9';
             }
@@ -240,6 +281,9 @@
             else if (lastchar === ' ') {
                 one.value = one.value ;
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
 
             else {
                 one.value = one.value + ' * ';
@@ -250,7 +294,12 @@
             if (one.value === '0') {
                 one.value = '0';
             }
-            else {
+
+             else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
+        else {
                 one.value = one.value + '0';
             }
         }
@@ -259,6 +308,10 @@
             if (one.value === '0') {
                 one.value = '00';
             }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
+            }
+
             else {
                 one.value = one.value + '00';
             }
@@ -268,6 +321,10 @@
             lastchar = one.value.charAt(one.value.length-1);
             if (one.value === '0') {
                 one.value = '.';
+            }
+
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
             }
 
             else if (lastchar === '.') {
@@ -283,6 +340,9 @@
             lastchar = one.value.charAt(one.value.length-1);
             if (one.value === '0') {
                 one.value = ' / ';
+            }
+         else if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
             }
 
             else if (lastchar === ' ') {
