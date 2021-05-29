@@ -129,9 +129,10 @@
         var one = document.querySelector('input');
         var lastchar = '0';
 
-       If(one.value.length > 26) {
-            
+       if(one.value.length > 26) {
+            document.getElementByClassName("screen").style.fontSize = "16px";
             }
+
         function press1() {
             if (one.value === '0') {
                 one.value = '1';
